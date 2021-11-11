@@ -6,21 +6,21 @@ import { Footer } from "../components/footer";
 import { Main } from "../components/main";
 
 const GlobalStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{
   padding:0;
   margin:0;
   box-sizing:border-box;
   cursor:default;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Bebas Neue', cursive;  
   scroll-behavior: smooth;
+  color:#fff;
 }
 body{
   background-color:#000;
-  color:#fff;
 }
 a{
   text-decoration:none;
+  cursor:pointer;
 }
 button:hover{
   transition:0.7s ease-in;
@@ -31,6 +31,10 @@ export default function Index() {
   return (
     <div>
       <Helmet>
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        </style>
         <title>ZIGGY STARDUST</title>
       </Helmet>
       <GlobalStyle/>
