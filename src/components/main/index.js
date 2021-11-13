@@ -84,7 +84,13 @@ export function Main() {
           </S.MemberContainer>
         </S.BandContainer>
         <S.TracksContainer style={{backgroundImage:`url(${trackbackground.url})`}}>
-
+          <div>
+            <h2>{tracklist}</h2>
+            <p>{tracksubtitle}</p>
+            <ul>
+              {track.map((item)=><li>{item}</li>)}
+            </ul>
+          </div>
         </S.TracksContainer>
     </S.Container>
   )

@@ -17,6 +17,18 @@ const GlobalStyle = createGlobalStyle`
 }
 body{
   background-color:#000;
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: black; 
+}
+::-webkit-scrollbar-thumb {
+  background: #B8834F; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: darkgoldenrod; 
+}
 }
 a{
   text-decoration:none;
