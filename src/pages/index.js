@@ -36,6 +36,7 @@ export default function Index() {
           @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
         </style>
         <title>ZIGGY STARDUST</title>
+        <link href="" rel="icon" type="image/x-icon" />
       </Helmet>
       <GlobalStyle/>
       <Header/>

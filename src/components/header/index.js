@@ -42,7 +42,7 @@ export function Header() {
             <S.NavItem href="#">{shows}</S.NavItem>
             <S.NavItem href="#">{tracks}</S.NavItem>
             <S.NavItem href="#">{photos}</S.NavItem>
-            <S.NavItem href="#">{release}</S.NavItem>
+            <S.Navbtn>{release}</S.Navbtn>
           </S.Navigation>
         </S.Menu>
         <S.HeaderIntro style={{backgroundImage:`url(${backgroundHeader.url})`}}>
