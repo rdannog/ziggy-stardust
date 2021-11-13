@@ -42,7 +42,7 @@ export const MemberInfo = styled.div`
         font-size:1.7vw;
         font-weight:400;
         margin:3vh 0;
-        text-shadow:1px 1px darkgoldenrod;
+        text-shadow:1px 1px 5px darkgoldenrod;
     }
     button{
         width: 12vw;
@@ -63,6 +63,7 @@ export const MemberInfo = styled.div`
 
         &:hover{
             color: #000;
+            box-shadow: 0 0 10px #5C703B;
         }
         &:hover:after {
             height: 100%;
@@ -87,39 +88,107 @@ export const TracksContainer = styled.section`
     justify-content:start;
     background-size:cover;
     background-position:20% 20%;
-    div{
-        width:100%;
-        height:100%;
-        padding-left:6%;
-        display: flex;
-        flex-direction:column;
-        align-items:start;
-        justify-content:center;
-        background-image:linear-gradient(to right, #CDCDCD, transparent);
-    }
+    
+`
+export const Content = styled.div`
+    width:100%;
+    height:100%;
+    padding-left:10%;
+    display: flex;
+    flex-direction:column;
+    align-items:start;
+    justify-content:center;
+    background-image:linear-gradient(to right, #CDCDCD, transparent);
     ul{
-        list-style:none;
+        list-style:square;
+        list-style-image:linear-gradient(to right, #5C703B, darkgoldenrod, goldenrod);
     }
     h2{
         font-size:3.2vw;
         margin-bottom:3vh;
         color: darkgoldenrod;
-        text-shadow:3px 2px 2px black;
+        text-shadow:2px 2px 2px black;
     }
     p{
-        color:#000;
-        font-size:1.4vw;
-        font-weight:900;
+        color:#333;
+        font-size:1.2vw;
+        font-weight:600;
         font-family: 'Roboto', sans-serif;
         margin-bottom:5vh;
-        text-shadow:1.5px 2px 5px gray;
+        text-shadow:1.5px 2px 15px #555;
         text-transform:uppercase;
     }
     li{
-        color:#fff;
+        color:#444;
         font-size:1.5vw;
-        text-shadow:1px 2px 5px black;
+        text-shadow:1px 2px 5px gray;
         margin-left:1vw;
         margin-bottom:0.3vh;
+    }
+
+`
+export const VidContainer = styled.section`
+    width:100%;
+    height:95vh;
+    font-size:2.7vw;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding-top:5vh;
+    h2{
+        color:#5C703B;
+        text-shadow:1px 2px 5px rgba(184, 131, 79, 0.2);
+        border-bottom:2px solid #333;
+    }
+`
+export const BoxCard = styled.div`
+    width:90%;
+    height:70%;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    margin-top:5vh;
+`
+export const VidContent = styled.div`
+    width:40%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+    background-color:rgba(184, 131, 79, 0.2);
+    padding:2vh;
+    border-radius:5px;
+    &:hover{
+        transform:scale(1.05);
+        transition: all 0.7s ease-in;
+    }
+`
+export const Video = styled.div`
+    width:100%;
+    height:80%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-size:contain;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-color:black;
+    img{
+        cursor:pointer;
+    }
+`
+export const Name = styled.div`
+    width:80%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-top:3px solid #000;
+    padding-top:2vh;
+    h3{
+        font-size:2vw;
+        font-weight:300;
+        text-shadow:1px 1px 5px #222;
     }
 `

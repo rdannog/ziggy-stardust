@@ -84,14 +84,35 @@ export function Main() {
           </S.MemberContainer>
         </S.BandContainer>
         <S.TracksContainer style={{backgroundImage:`url(${trackbackground.url})`}}>
-          <div>
+          <S.Content>
             <h2>{tracklist}</h2>
             <p>{tracksubtitle}</p>
             <ul>
               {track.map((item)=><li>{item}</li>)}
             </ul>
-          </div>
+          </S.Content>
         </S.TracksContainer>
+        <S.VidContainer>
+          <h2>{bottomTitle}</h2>
+          <S.BoxCard>
+            <S.VidContent>
+              <S.Video style={{backgroundImage:`url(${vid1.url})`}}>
+                <img src={playBtn.url} alt=""/>
+              </S.Video>
+              <S.Name>
+                <h3>{vidTxt1}</h3>
+              </S.Name>
+            </S.VidContent>
+            <S.VidContent>
+              <S.Video style={{backgroundImage:`url(${vid2.url})`}}>
+                <img src={playBtn.url} alt=""/>
+              </S.Video>
+              <S.Name>
+                <h3>{vidTxt2}</h3>
+              </S.Name>
+            </S.VidContent>
+          </S.BoxCard>
+        </S.VidContainer>
     </S.Container>
   )
 }
