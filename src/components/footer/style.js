@@ -13,13 +13,13 @@ export const FooterBar = styled.section`
 `
 
 export const Logo = styled.div`
-    width:25%;
+    width:15%;
     height:40%;
     display: flex;
     justify-content: center;
     align-items: center;
     img{
-        width:70%;
+        width:100%;
         cursor: pointer;
     }
 `
