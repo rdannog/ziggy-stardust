@@ -160,10 +160,6 @@ export const VidContent = styled.div`
     background-color:rgba(184, 131, 79, 0.2);
     padding:2vh;
     border-radius:5px;
-    &:hover{
-        transform:scale(1.05);
-        transition: all 0.7s ease-in;
-    }
 `
 export const Video = styled.div`
     width:100%;
@@ -177,6 +173,11 @@ export const Video = styled.div`
     background-color:black;
     img{
         cursor:pointer;
+    }
+    &:hover{
+        transform:scale(1.01);
+        transition: all 0.7s ease-in-out;
+        border-radius:20px;
     }
 `
 export const Name = styled.div`
