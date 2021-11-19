@@ -36,7 +36,8 @@ export function Footer() {
     
     return (
     <S.Container>
-        <S.FooterBar>
+      <a href="#about" id="about">.</a>
+        <S.FooterBar data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0">
             <S.Logo>
               <img src={logo.url} alt="logo"/>
             </S.Logo>

@@ -99,6 +99,14 @@ export const Content = styled.div`
     align-items:start;
     justify-content:center;
     background-image:linear-gradient(to right, #CDCDCD, transparent);
+
+        animation: 2s slide-right 1s forwards;
+        transform:translateX(-120%);
+        @keyframes slide-right {
+            to {
+              transform:translateX(0);
+            }
+        }
     ul{
         list-style:square;
         list-style-image:linear-gradient(to right, #5C703B, darkgoldenrod, goldenrod);

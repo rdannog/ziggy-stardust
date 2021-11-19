@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "gatsby"
 import { graphql, useStaticQuery } from 'gatsby'
 import * as S from './style'
 
@@ -48,13 +49,15 @@ export function Main() {
     
     return (
     <S.Container>
-        <S.BandContainer>
+        <S.BandContainer id="photos" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
           <S.MemberContainer>
             <S.Memberimg style={{backgroundImage:`url(${mainImg1.url})`}}>
             </S.Memberimg>
             <S.MemberInfo>
               <h3>{label}</h3>
-              <button>{seeMore}</button>
+              <Link to="/Photos">
+                <button>{seeMore}</button>
+              </Link>
             </S.MemberInfo>
           </S.MemberContainer>
           <S.MemberContainer>
@@ -83,8 +86,9 @@ export function Main() {
             </S.MemberInfo>
           </S.MemberContainer>
         </S.BandContainer>
+        <a href="#" id="tracks">.</a>
         <S.TracksContainer style={{backgroundImage:`url(${trackbackground.url})`}}>
-          <S.Content>
+          <S.Content data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <h2>{tracklist}</h2>
             <p>{tracksubtitle}</p>
             <ul>
@@ -92,10 +96,11 @@ export function Main() {
             </ul>
           </S.Content>
         </S.TracksContainer>
+        <a href="#" id="shows">.</a>
         <S.VidContainer>
           <h2>{bottomTitle}</h2>
           <S.BoxCard>
-            <S.VidContent>
+            <S.VidContent data-aos="fade-up" data-aos-anchor-placement="center-bottom">
               <S.Video style={{backgroundImage:`url(${vid1.url})`}}>
                 <img src={playBtn.url} alt=""/>
               </S.Video>
@@ -103,7 +108,7 @@ export function Main() {
                 <h3>{vidTxt1}</h3>
               </S.Name>
             </S.VidContent>
-            <S.VidContent>
+            <S.VidContent data-aos="fade-up" data-aos-anchor-placement="center-bottom">
               <S.Video style={{backgroundImage:`url(${vid2.url})`}}>
                 <img src={playBtn.url} alt=""/>
               </S.Video>

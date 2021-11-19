@@ -94,6 +94,13 @@ export const TextIntro = styled.div`
     flex-direction:column;
     align-items:start;
     justify-content:center;
+    animation: 2s slide-right 1s forwards;
+        transform:translateX(-120%);
+        @keyframes slide-right {
+            to {
+              transform:translateX(0);
+            }
+        }
     h1{
         width:90%;
         font-size:3.2vw;
@@ -121,13 +128,31 @@ export const TextIntro = styled.div`
         background-color:#8B5937;
         border:transparent solid;
         border-radius:10px;
-        &:hover {
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+
+        &:hover{
             color: #fff;
             background-color:darkgoldenrod;
             transition: all 0.4s ease 0s;
-            animation: 5s ease 0s 1 normal none running fdBcwW;
+            animation: 5s ease 0s 1 normal none running;
             transform:scale(1.05);
             cursor:pointer;
-        } 
+        }
+        &:hover:after {
+            height: 100%;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            transition: all 0.5s ease;
+            left: 0;
+            bottom: 0;
+            height: 0;
+            width: 100%;
+            background: darkgoldenrod;
+        }
     }
 `
