@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled from "styled-components"; 
+import { Link } from "gatsby";
 
 export const Container = styled.header`
     width:100%
@@ -32,12 +33,12 @@ export const Navigation = styled.div`
     align-items:center;
     justify-content:space-around;
 `
-export const NavItem = styled.a`
+export const NavItem = styled(Link)`
 font-size:1.3vw;
 &:hover {
     color: #e8ca11;
     transition: all 0.3s ease 0s;
-    animation: 5s ease 0s 1 normal none running fdBcwW;
+    animation: 5s ease 0s 1 normal none running;
 } 
 `
 export const Navbtn = styled.button`

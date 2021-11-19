@@ -4,7 +4,7 @@ import AOS from "aos";
 import { Header } from "../components/header";
 import { Footer } from "../components/footer";
 import { Main } from "../components/main";
-import {GlobalStyle} from "./style";
+import {GlobalStyle} from "./style/style";
 
 
 export default function Index() {
