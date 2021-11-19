@@ -66,7 +66,9 @@ export function Main() {
             </S.Memberimg>
             <S.MemberInfo>
               <h3>{label}</h3>
-              <button>{seeMore}</button>
+              <Link to="/Photos">
+                <button>{seeMore}</button>
+              </Link>
             </S.MemberInfo>
           </S.MemberContainer>
           <S.MemberContainer>
@@ -74,7 +76,9 @@ export function Main() {
             </S.Memberimg>
             <S.MemberInfo>
               <h3>{label}</h3>
-              <button>{seeMore}</button>
+              <Link to="/Photos">
+                <button>{seeMore}</button>
+              </Link>
             </S.MemberInfo>
           </S.MemberContainer>
           <S.MemberContainer>
@@ -82,7 +86,9 @@ export function Main() {
             </S.Memberimg>
             <S.MemberInfo>
               <h3>{label}</h3>
-              <button>{seeMore}</button>
+              <Link to="/Photos">
+                <button>{seeMore}</button>
+              </Link>
             </S.MemberInfo>
           </S.MemberContainer>
         </S.BandContainer>
