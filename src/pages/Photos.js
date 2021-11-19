@@ -1,8 +1,8 @@
 import React from 'react'
 import { Helmet } from "react-helmet";
 import {Link, graphql, useStaticQuery} from 'gatsby'
-import * as S from './style/style'
-import { GlobalStyle } from './style/style'
+import * as S from './styles/style'
+import { GlobalStyle } from './styles/style'
 import AOS from 'aos';
 
 export default function Photos() {
