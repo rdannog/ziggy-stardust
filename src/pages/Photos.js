@@ -38,7 +38,7 @@ button:hover{
   transition:0.7s ease-in;
 }
 `
-export default function Photos() {
+ function Photos() {
     const data = useStaticQuery(graphql`
         query {
            completedata{
