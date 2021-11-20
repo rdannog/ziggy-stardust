@@ -39,9 +39,9 @@ export function Header() {
           <S.Navigation>
             <S.NavItem to="/">{homebtn}</S.NavItem>
             <S.NavItem to="/Photos">{photos}</S.NavItem>
-            <S.NavItem href="#tracks">{tracks}</S.NavItem>
-            <S.NavItem href="#shows">{shows}</S.NavItem>
-            <S.NavItem href="#about">{about}</S.NavItem>
+            <S.NavItem to="/#tracks">{tracks}</S.NavItem>
+            <S.NavItem to="/#shows">{shows}</S.NavItem>
+            <S.NavItem to="/#about">{about}</S.NavItem>
             <S.Navbtn>{release}</S.Navbtn>
           </S.Navigation>
         </S.Menu>

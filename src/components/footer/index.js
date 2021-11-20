@@ -65,7 +65,7 @@ export function Footer() {
                 <S.LinkList>
                   <S.LinkItem>
                     {links.map((item) => (
-                      <a href="" target="_blank" rel="noopener noreferrer">{item}</a>
+                      <a href="#home">{item}</a>
                     ))}
                   </S.LinkItem>
                 </S.LinkList>
@@ -73,10 +73,10 @@ export function Footer() {
               <S.SocialMedia>
                 <h2>{list4}</h2>
                 <S.SocialMediaItem>
-                  <a href="#" target="_blank" rel="noopener noreferrer">{youtube}</a>
-                  <a href="#" target="_blank" rel="noopener noreferrer">{facebook}</a>
-                  <a href="#" target="_blank" rel="noopener noreferrer">{instagram}</a>
-                  <a href="#" target="_blank" rel="noopener noreferrer">{twitter}</a>
+                  <a href="https://www.youtube.com/channel/UC8YgWcDKi1rLbQ1OtrOHeDw" target="_blank" rel="noreferrer noopener">{youtube}</a>
+                  <a href="https://www.facebook.com/davidbowie" target="_blank" rel="noreferrer noopener">{facebook}</a>
+                  <a href="https://www.instagram.com/davidbowie/" target="_blank" rel="noreferrer noopener">{instagram}</a>
+                  <a href="https://twitter.com/DavidBowieReal" target="_blank" rel="noreferrer noopener">{twitter}</a>
                 </S.SocialMediaItem>
               </S.SocialMedia>
             </S.Contact>

@@ -1,39 +1,5 @@
 import styled from "styled-components";
-import { createGlobalStyle } from "styled-components";
 
-export const GlobalStyle = createGlobalStyle`
-*{
-  padding:0;
-  margin:0;
-  box-sizing:border-box;
-  cursor:default;
-  font-family: 'Bebas Neue', cursive;  
-  scroll-behavior: smooth;
-  color:#fff;
-}
-body{
-  background-color:#000;
-::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-track {
-  background: black; 
-}
-::-webkit-scrollbar-thumb {
-  background: #B8834F; 
-}
-::-webkit-scrollbar-thumb:hover {
-  background: darkgoldenrod; 
-}
-}
-a{
-  text-decoration:none;
-  cursor:pointer;
-}
-button:hover{
-  transition:0.7s ease-in;
-}
-`
 export const Menu = styled.section`
     height:12vh; 
     width:100%;
