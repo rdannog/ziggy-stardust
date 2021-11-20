@@ -2,10 +2,9 @@ import React from 'react'
 import { Helmet } from "react-helmet";
 import {Link, graphql, useStaticQuery} from 'gatsby'
 import * as S from './style'
-import { GlobalStyle } from './style'
 import AOS from 'aos';
 
-export default function Photos() {
+function Photos(){
     const data = useStaticQuery(graphql`
         query {
            completedata{
@@ -36,7 +35,7 @@ export default function Photos() {
                 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
                 <link href="" rel="icon" type="image/x-icon" />
             </Helmet>
-            <GlobalStyle/>
+            <S.GlobalStyle/>
             <script>
                 {AOS.init()};
             </script>
@@ -133,3 +132,4 @@ export default function Photos() {
         </div>
     )
 }
+export default Photos;

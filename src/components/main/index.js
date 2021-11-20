@@ -48,8 +48,8 @@ export function Main() {
     const {seeMore, trackbackground, track, tracklist, tracksubtitle, vidTxt1, vidTxt2, vid1, vid2, bottomTitle, label, mainImg1, mainImg2, mainImg3, mainImg4, playBtn} = data.completedata.mains[0]
     
     return (
-    <S.Container>
-        <S.BandContainer id="photos" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+    <S.Container id="photos">
+        <S.BandContainer data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
           <S.MemberContainer>
             <S.Memberimg style={{backgroundImage:`url(${mainImg1.url})`}}>
             </S.Memberimg>
@@ -92,8 +92,8 @@ export function Main() {
             </S.MemberInfo>
           </S.MemberContainer>
         </S.BandContainer>
-        <a href="#" id="tracks">.</a>
-        <S.TracksContainer style={{backgroundImage:`url(${trackbackground.url})`}}>
+        
+        <S.TracksContainer id="tracks" style={{backgroundImage:`url(${trackbackground.url})`}}>
           <S.Content data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <h2>{tracklist}</h2>
             <p>{tracksubtitle}</p>
@@ -102,8 +102,7 @@ export function Main() {
             </ul>
           </S.Content>
         </S.TracksContainer>
-        <a href="#" id="shows">.</a>
-        <S.VidContainer>
+        <S.VidContainer id="shows">
           <h2>{bottomTitle}</h2>
           <S.BoxCard>
             <S.VidContent data-aos="fade-up" data-aos-anchor-placement="center-bottom">

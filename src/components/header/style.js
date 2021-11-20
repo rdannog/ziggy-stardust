@@ -34,11 +34,14 @@ export const Navigation = styled.div`
 `
 export const NavItem = styled.a`
 font-size:1.3vw;
-&:hover {
+& p:hover {
     color: #e8ca11;
     transition: all 0.3s ease 0s;
     animation: 5s ease 0s 1 normal none running fdBcwW;
 } 
+p{
+    cursor:pointer;
+}
 `
 export const Navbtn = styled.button`
     width: 10vw;

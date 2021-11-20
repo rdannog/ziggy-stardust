@@ -35,8 +35,7 @@ export function Footer() {
     const {copyright, refs, date1, date2,facebook, instagram, links, list1, list2, list3, list4, twitter, txt1, txt2, txt3, txt4, youtube, logo} = data.completedata.footers[0]
     
     return (
-    <S.Container>
-      <a href="#about" id="about">.</a>
+    <S.Container id="about">
         <S.FooterBar data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0">
             <S.Logo>
               <img src={logo.url} alt="logo"/>
@@ -65,7 +64,7 @@ export function Footer() {
                 <S.LinkList>
                   <S.LinkItem>
                     {links.map((item) => (
-                      <a href="" target="_blank" rel="noopener noreferrer">{item}</a>
+                      <a href="#home">{item}</a>
                     ))}
                   </S.LinkItem>
                 </S.LinkList>
@@ -73,10 +72,10 @@ export function Footer() {
               <S.SocialMedia>
                 <h2>{list4}</h2>
                 <S.SocialMediaItem>
-                  <a href="#" target="_blank" rel="noopener noreferrer">{youtube}</a>
-                  <a href="#" target="_blank" rel="noopener noreferrer">{facebook}</a>
-                  <a href="#" target="_blank" rel="noopener noreferrer">{instagram}</a>
-                  <a href="#" target="_blank" rel="noopener noreferrer">{twitter}</a>
+                  <a href="#home" >{youtube}</a>
+                  <a href="#home" >{facebook}</a>
+                  <a href="#home" >{instagram}</a>
+                  <a href="#home" >{twitter}</a>
                 </S.SocialMediaItem>
               </S.SocialMedia>
             </S.Contact>
