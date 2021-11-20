@@ -44,6 +44,7 @@
     </p>
     <a href="https://ziggy-stardust.netlify.app/"><p align="left"><em>See the project online here!</em></p></a>
 </div>
+<img src="https://github.com/rhayssadandara/ziggy-stardust_gatsby_landing-page/blob/main/src/components/readme/preview.png?raw=true">
 <br>
 
 <h2 id="revised-concepts">🗄️ Revised Concepts</h2>

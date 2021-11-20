@@ -81,7 +81,7 @@ export const Navbtn = styled.button`
 `
 export const HeaderIntro = styled.section`
     height:100vh;
-    margin-top:12vh;
+    margin-top:5vh;
     background-size:cover;
     background-position:center;
     display:flex;
