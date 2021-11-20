@@ -43,6 +43,8 @@
     </em>
     </p>
     <a href="https://ziggy-stardust.netlify.app/"><p align="left"><em>See the project online here!</em></p></a>
+
+    <img src="./src/components/readme/preview.png">
 </div>
 <br>
 
