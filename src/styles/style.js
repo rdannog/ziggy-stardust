@@ -98,3 +98,28 @@ div{
     margin:2vh 1vw;
 }
 `
+export const Copyright = styled.section`
+    width:100%;
+    height:7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top:1px solid white;
+    p{
+        font-weight:100;
+        font-size:1vw;
+    }
+`
+export const References = styled.section`
+    width:100%;
+    height:7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5C703B;
+    p{
+        font-weight:100;
+        font-size:0.7vw;
+        font-family: 'Roboto', sans-serif;
+    }
+`
