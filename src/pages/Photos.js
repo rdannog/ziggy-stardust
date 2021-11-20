@@ -98,7 +98,7 @@ export default function Photos() {
             </S.Menu>            
             <S.Main >
                 <S.Title>
-                    <h1>Photos</h1>
+                    <h1>{photos}</h1>
                 </S.Title>
                <S.ImageContainer>
                     <div data-aos="flip-down">

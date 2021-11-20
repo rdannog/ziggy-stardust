@@ -34,7 +34,7 @@ export function Header() {
     <S.Container>
         <S.Menu>
           <S.LogoContainer>
-            <S.NavItem to="/"><img src={logo.url} alt=""/></S.NavItem>
+            <S.NavItem to="/#"><img src={logo.url} alt=""/></S.NavItem>
           </S.LogoContainer>
           <S.Navigation>
             <S.NavItem to="/">{homebtn}</S.NavItem>
