@@ -1,10 +1,44 @@
 import React from 'react'
 import { Helmet } from "react-helmet";
 import {Link, graphql, useStaticQuery} from 'gatsby'
-import * as S from './style'
+import * as S from './styles/style'
 import AOS from 'aos';
+import { createGlobalStyle } from "styled-components";
 
-function Photos(){
+const GlobalStyle = createGlobalStyle`
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+  cursor:default;
+  font-family: 'Bebas Neue', cursive;  
+  scroll-behavior: smooth;
+  color:#fff;
+}
+body{
+  background-color:#000;
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: black; 
+}
+::-webkit-scrollbar-thumb {
+  background: #B8834F; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: darkgoldenrod; 
+}
+}
+a{
+  text-decoration:none;
+  cursor:pointer;
+}
+button:hover{
+  transition:0.7s ease-in;
+}
+`
+export default function Photos() {
     const data = useStaticQuery(graphql`
         query {
            completedata{
@@ -41,7 +75,7 @@ function Photos(){
             </script>
             <S.Menu>
                 <S.LogoContainer>
-                    <img src={logo.url} alt=""/>
+                    <Link to="/"><img src={logo.url} alt=""/></Link>
                 </S.LogoContainer>
                 <S.Navigation>
                     <S.NavItem href="#home">
@@ -64,7 +98,7 @@ function Photos(){
             </S.Menu>            
             <S.Main >
                 <S.Title>
-                    <h1>Photos</h1>
+                    <h1>{photos}</h1>
                 </S.Title>
                <S.ImageContainer>
                     <div data-aos="flip-down">

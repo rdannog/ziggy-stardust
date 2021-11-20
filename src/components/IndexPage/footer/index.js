@@ -72,10 +72,10 @@ export function Footer() {
               <S.SocialMedia>
                 <h2>{list4}</h2>
                 <S.SocialMediaItem>
-                  <a href="#home" >{youtube}</a>
-                  <a href="#home" >{facebook}</a>
-                  <a href="#home" >{instagram}</a>
-                  <a href="#home" >{twitter}</a>
+                  <a href="https://www.youtube.com/channel/UC8YgWcDKi1rLbQ1OtrOHeDw" target="_blank" rel="noreferrer noopener">{youtube}</a>
+                  <a href="https://www.facebook.com/davidbowie" target="_blank" rel="noreferrer noopener">{facebook}</a>
+                  <a href="https://www.instagram.com/davidbowie/" target="_blank" rel="noreferrer noopener">{instagram}</a>
+                  <a href="https://twitter.com/DavidBowieReal" target="_blank" rel="noreferrer noopener">{twitter}</a>
                 </S.SocialMediaItem>
               </S.SocialMedia>
             </S.Contact>

@@ -34,19 +34,18 @@ export function Header() {
     <S.Container>
         <S.Menu>
           <S.LogoContainer>
-            <img src={logo.url} alt=""/>
+            <S.NavItem to="/#"><img src={logo.url} alt=""/></S.NavItem>
           </S.LogoContainer>
           <S.Navigation>
-            <S.NavItem href="#home"><p>{homebtn}</p></S.NavItem>
-            <S.NavItem href="#photos"><p>{photos}</p></S.NavItem>
-            <S.NavItem href="#tracks"><p>{tracks}</p></S.NavItem>
-            <S.NavItem href="#shows"><p>{shows}</p></S.NavItem>
-            <S.NavItem href="#about"><p>{about}</p></S.NavItem>
+            <S.NavItem to="/">{homebtn}</S.NavItem>
+            <S.NavItem to="/Photos">{photos}</S.NavItem>
+            <S.NavItem to="/#tracks">{tracks}</S.NavItem>
+            <S.NavItem to="/#shows">{shows}</S.NavItem>
+            <S.NavItem to="/#about">{about}</S.NavItem>
             <S.Navbtn>{release}</S.Navbtn>
           </S.Navigation>
         </S.Menu>
-        
-        <S.HeaderIntro id="home" style={{backgroundImage:`url(${backgroundHeader.url})`}}>
+        <S.HeaderIntro style={{backgroundImage:`url(${backgroundHeader.url})`}}>
           <S.TextIntro>
             <h1>{title}</h1>
             <h2>{subtitle}</h2>
