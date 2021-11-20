@@ -75,7 +75,7 @@ export default function Photos() {
             </script>
             <S.Menu>
                 <S.LogoContainer>
-                    <img src={logo.url} alt=""/>
+                    <Link to="/"><img src={logo.url} alt=""/></Link>
                 </S.LogoContainer>
                 <S.Navigation>
                     <S.NavItem href="#home">

@@ -1,9 +1,9 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import AOS from "aos";
-import { Header } from "../components/header";
-import { Footer } from "../components/footer";
-import { Main } from "../components/main";
+import { Header } from "../components/IndexPage/header";
+import { Footer } from "../components/IndexPage/footer";
+import { Main } from "../components/IndexPage/main";
 //import { About } from "../components/about";
 import { createGlobalStyle } from "styled-components";
 
