@@ -44,7 +44,7 @@
     </p>
     <a href="https://ziggy-stardust.netlify.app/"><p align="left"><em>See the project online here!</em></p></a>
 
-    <img src="./src/components/readme/preview.png">
+    <img src="https://github.com/rhayssadandara/ziggy-stardust_gatsby_landing-page/blob/main/src/components/readme/preview.png?raw=true">
 </div>
 <br>
 
