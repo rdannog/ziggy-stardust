@@ -1,7 +1,7 @@
 import React from 'react'
 import { Helmet } from "react-helmet";
 import {Link, graphql, useStaticQuery} from 'gatsby'
-import * as S from '../styles/style'
+import * as S from '../components/styles/style'
 import AOS from 'aos';
 import { createGlobalStyle } from "styled-components";
 
