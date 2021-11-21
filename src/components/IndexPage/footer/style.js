@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { Link } from "gatsby";
 export const Container = styled.footer`
     border-top: 1px solid #e6e6e6;
     margin-top:10vh;
@@ -129,4 +129,15 @@ export const References = styled.section`
         font-size:0.7vw;
         font-family: 'Roboto', sans-serif;
     }
+`
+export const NavItem = styled(Link)`
+font-size:1.3vw;
+& p:hover {
+    color: #e8ca11;
+    transition: all 0.3s ease 0s;
+    animation: 5s ease 0s 1 normal none running;
+} 
+p{
+    cursor:pointer;
+}
 `

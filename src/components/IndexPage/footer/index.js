@@ -7,13 +7,21 @@ export function Footer() {
     const data = useStaticQuery(graphql`
         query {
             completedata{
+              headers {
+                homebtn
+                logo {
+                  url
+                }
+                photos
+                release
+                about
+              }
               footers {
                 copyright
                 date1
                 date2
                 facebook
                 instagram
-                links
                 list1
                 list2
                 list3
@@ -32,8 +40,9 @@ export function Footer() {
             }
         }
     `)
-    const {copyright, refs, date1, date2,facebook, instagram, links, list1, list2, list3, list4, twitter, txt1, txt2, txt3, txt4, youtube, logo} = data.completedata.footers[0]
-    
+    const {copyright, refs, date1, date2,facebook, instagram, list1, list2, list3, list4, twitter, txt1, txt2, txt3, txt4, youtube, logo} = data.completedata.footers[0]
+    const {homebtn, photos, about} = data.completedata.headers[0]
+
     return (
     <S.Container id="about">
         <S.FooterBar data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0">
@@ -63,9 +72,9 @@ export function Footer() {
                 <h2>{list3}</h2>
                 <S.LinkList>
                   <S.LinkItem>
-                    {links.map((item) => (
-                      <a href="#home">{item}</a>
-                    ))}
+                    <S.NavItem to="/">{homebtn}</S.NavItem>
+                    <S.NavItem to="/Photos">{photos}</S.NavItem>
+                    <S.NavItem to="/#about">{about}</S.NavItem>
                   </S.LinkItem>
                 </S.LinkList>
               </S.Links>

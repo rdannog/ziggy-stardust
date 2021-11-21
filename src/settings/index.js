@@ -14,7 +14,7 @@ export function Settings() {
         <title>ZIGGY STARDUST</title>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <link href="" rel="icon" type="image/x-icon" />
+        <link href="https://www.iconspng.com/uploads/bolt-icon-/bolt-icon-.png" rel="icon" type="image/x-icon" />
         
         {AOS.init()};
       </Helmet>

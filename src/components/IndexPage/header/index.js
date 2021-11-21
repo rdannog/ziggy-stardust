@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
+import { Link, graphql, useStaticQuery } from 'gatsby'
 import * as S from './style'
 import { Menu } from './menu'
 
@@ -29,7 +29,11 @@ export function Header() {
             <h1>{title}</h1>
             <h2>{subtitle}</h2>
             <p>{text}</p>
-            <button>{button}</button>
+            <button>
+              <Link to="/Buy">
+                {button}
+              </Link>
+            </button>
           </S.TextIntro>
         </S.HeaderIntro>
     </S.Container>

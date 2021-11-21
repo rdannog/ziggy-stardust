@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import * as S from './style'
-
+import { Link } from 'gatsby'
 
 export function Menu() {
     const data = useStaticQuery(graphql`
@@ -36,7 +36,9 @@ export function Menu() {
           <S.NavItem to="/#tracks">{tracks}</S.NavItem>
           <S.NavItem to="/#shows">{shows}</S.NavItem>
           <S.NavItem to="/#about">{about}</S.NavItem>
-          <S.Navbtn>{release}</S.Navbtn>
+          <Link to="/Buy">
+            <S.Navbtn>{release}</S.Navbtn>
+          </Link>
         </S.Navigation>
       </S.Menu>
     )
