@@ -26,7 +26,7 @@ export function Menu() {
     return (
       <S.Menu>
         <S.LogoContainer>
-          <S.NavItem to="/#">
+          <S.NavItem to="/">
             <img src={logo.url} alt=""/>
           </S.NavItem>
         </S.LogoContainer>
