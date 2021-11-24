@@ -5,7 +5,7 @@ import { Header } from "../components/IndexPage/header/index";
 import { Main } from "../components/IndexPage/main/index";
 import { Footer } from "../components/IndexPage/footer/index";
 
-export default function Index() {
+export function Index() {
   return (
     <div>
       <S.GlobalStyle />
