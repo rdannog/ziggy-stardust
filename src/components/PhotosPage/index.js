@@ -32,7 +32,7 @@ export function PhotoGallery() {
                 </S.Title>
                <S.ImageContainer>
                     {gallery.map((item) => (
-                        <div data-aos="flip-down">
+                        <div>
                             <S.MainImg src={item.url} alt=""/>
                         </div>
                     ))} 

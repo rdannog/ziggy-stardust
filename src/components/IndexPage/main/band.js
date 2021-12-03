@@ -30,7 +30,7 @@ export function Band() {
     const {seeMore, label, mainImg1, mainImg2, mainImg3, mainImg4} = data.completedata.mains[0]
     
     return (
-        <S.BandContainer data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+        <S.BandContainer>
         <S.MemberContainer>
           <S.Memberimg style={{backgroundImage:`url(${mainImg1.url})`}}>
           </S.Memberimg>

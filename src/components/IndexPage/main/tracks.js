@@ -22,7 +22,7 @@ export function Tracks() {
     
     return (
         <S.TracksContainer id="tracks" style={{backgroundImage:`url(${trackbackground.url})`}}>
-            <S.Content data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <S.Content>
             <h2>{tracklist}</h2>
             <p>{tracksubtitle}</p>
             <ul>

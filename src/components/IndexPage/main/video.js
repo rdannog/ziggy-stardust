@@ -30,7 +30,7 @@ export function Video() {
         <S.VidContainer id="shows">
             <h2>{bottomTitle}</h2>
             <S.BoxCard>
-            <S.VidContent data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <S.VidContent>
                 <S.Video style={{backgroundImage:`url(${vid1.url})`}}>
                 <img src={playBtn.url} alt=""/>
                 </S.Video>
@@ -38,7 +38,7 @@ export function Video() {
                 <h3>{vidTxt1}</h3>
                 </S.Name>
             </S.VidContent>
-            <S.VidContent data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <S.VidContent>
                 <S.Video style={{backgroundImage:`url(${vid2.url})`}}>
                 <img src={playBtn.url} alt=""/>
                 </S.Video>
