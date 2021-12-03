@@ -1,7 +1,8 @@
 module.exports = {
+  pathPrefix: "/ziggy-stardust/",
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "bowie",
+    siteUrl: "https://rdannog.github.io",
+    title: "ZIGGY STARDUST",
   },
   plugins: ["gatsby-plugin-styled-components", "gatsby-plugin-react-helmet",
   {
