@@ -10,6 +10,7 @@ function Index() {
     <div>
       <S.GlobalStyle />
       <Settings />
+      <h1>FUNCIONA </h1>
       <Header/>
       <Main/>
       <Footer/>
