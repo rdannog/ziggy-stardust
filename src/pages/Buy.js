@@ -4,7 +4,6 @@ import { Settings } from "../settings/index";
 import { Menu } from "../components/IndexPage/header/menu";
 import { Footer } from "../components/IndexPage/footer/index";
 import { BuyIndex } from "../components/BuyPage/index";
-import {Tracks} from "../components/IndexPage/main/tracks";
 
 export default function Buy() {
   return (
@@ -13,7 +12,6 @@ export default function Buy() {
       <Settings />
       <Menu/>
       <BuyIndex/>
-      <Tracks/>
       <Footer/>
     </div>
   )
