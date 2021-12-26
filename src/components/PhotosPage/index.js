@@ -1,9 +1,6 @@
 import React from 'react'
 import {graphql, useStaticQuery} from 'gatsby'
 import * as S from '../../styles/photosPage'
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
-AOS.init();
 
 export function PhotoGallery() {
     const data = useStaticQuery(graphql`
@@ -36,7 +33,7 @@ export function PhotoGallery() {
                <S.ImageContainer>
                     {gallery.map((item) => (
                         <div>
-                            <S.MainImg data-aos="flip-down" src={item.url} alt=""/>
+                            <S.MainImg src={item.url} alt=""/>
                         </div>
                     ))} 
                </S.ImageContainer>

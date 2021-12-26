@@ -1,10 +1,6 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import * as S from './style'
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
-AOS.init();
-
 
 export function Footer() {
     const data = useStaticQuery(graphql`
@@ -48,7 +44,7 @@ export function Footer() {
 
     return (
     <S.Container id="about">
-        <S.FooterBar data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+        <S.FooterBar>
             <S.Logo>
               <img src={logo.url} alt="logo"/>
             </S.Logo>
