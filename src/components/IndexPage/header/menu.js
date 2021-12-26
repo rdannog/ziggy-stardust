@@ -31,12 +31,12 @@ export function Menu() {
           </S.NavItem>
         </S.LogoContainer>
         <S.Navigation>
-          <S.NavItem to="/">{homebtn}</S.NavItem>
-          <S.NavItem to="/Photos">{photos}</S.NavItem>
-          <S.NavItem to="/#tracks">{tracks}</S.NavItem>
-          <S.NavItem to="/#shows">{shows}</S.NavItem>
-          <S.NavItem to="/#about">{about}</S.NavItem>
-          <Link to="/Buy">
+          <S.NavItem to="ziggy-stardust_gatsby_landing-page/">{homebtn}</S.NavItem>
+          <S.NavItem to="ziggy-stardust_gatsby_landing-page/Photos">{photos}</S.NavItem>
+          <S.NavItem to="ziggy-stardust_gatsby_landing-page/#tracks">{tracks}</S.NavItem>
+          <S.NavItem to="ziggy-stardust_gatsby_landing-page/#shows">{shows}</S.NavItem>
+          <S.NavItem to="ziggy-stardust_gatsby_landing-page/#about">{about}</S.NavItem>
+          <Link to="ziggy-stardust_gatsby_landing-page/Buy">
             <S.Navbtn>{release}</S.Navbtn>
           </Link>
         </S.Navigation>
