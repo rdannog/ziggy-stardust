@@ -42,7 +42,7 @@
     <em>Construction of a landing page based on a template, using GatsbyJs. Project developed at Vai na Web with the aim of learning. I love David Bowie, hope you enjoy it!
     </em>
     </p>
-    <a href="https://ziggy-stardust.netlify.app/"><p align="left"><em>See the project online here!</em></p></a>
+    <a href="https://rdannog.github.io/ziggy-stardust_gatsby_landing-page/"><p align="left"><em>See the project online here!</em></p></a>
 </div>
 <img src="https://raw.githubusercontent.com/rdannog/ziggy-stardust/main/src/components/readme/preview.png">
 <br>
