@@ -1,7 +1,9 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import * as S from './style'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
 
 export function Tracks() {
     const data = useStaticQuery(graphql`
@@ -22,7 +24,7 @@ export function Tracks() {
     
     return (
         <S.TracksContainer id="tracks" style={{backgroundImage:`url(${trackbackground.url})`}}>
-            <S.Content>
+            <S.Content data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <h2>{tracklist}</h2>
             <p>{tracksubtitle}</p>
             <ul>

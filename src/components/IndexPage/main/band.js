@@ -2,7 +2,9 @@ import React from 'react'
 import { Link } from "gatsby"
 import { graphql, useStaticQuery } from 'gatsby'
 import * as S from './style'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
 
 export function Band() {
     const data = useStaticQuery(graphql`
@@ -32,8 +34,7 @@ export function Band() {
     return (
         <S.BandContainer>
         <S.MemberContainer>
-          <S.Memberimg style={{backgroundImage:`url(${mainImg1.url})`}}>
-          </S.Memberimg>
+          <S.Memberimg data-aos="fade-up" data-aos-duration="3000"style={{backgroundImage:`url(${mainImg1.url})`}}></S.Memberimg>
           <S.MemberInfo>
             <h3>{label}</h3>
             <Link to="/Photos">
@@ -42,9 +43,7 @@ export function Band() {
           </S.MemberInfo>
         </S.MemberContainer>
         <S.MemberContainer>
-          <S.Memberimg  style={{backgroundImage:`url(${mainImg2.url})`}}>
-            
-          </S.Memberimg>
+          <S.Memberimg data-aos="fade-up" data-aos-duration="3000" style={{backgroundImage:`url(${mainImg2.url})`}}></S.Memberimg>
           <S.MemberInfo>
             <h3>{label}</h3>
             <Link to="/Photos">
@@ -53,8 +52,7 @@ export function Band() {
           </S.MemberInfo>
         </S.MemberContainer>
         <S.MemberContainer>
-          <S.Memberimg style={{backgroundImage:`url(${mainImg3.url})`}}>
-          </S.Memberimg>
+          <S.Memberimg data-aos="fade-up" data-aos-duration="3000"style={{backgroundImage:`url(${mainImg3.url})`}}></S.Memberimg>
           <S.MemberInfo>
             <h3>{label}</h3>
             <Link to="/Photos">
@@ -63,8 +61,7 @@ export function Band() {
           </S.MemberInfo>
         </S.MemberContainer>
         <S.MemberContainer>
-          <S.Memberimg style={{backgroundImage:`url(${mainImg4.url})`}}>
-          </S.Memberimg>
+          <S.Memberimg data-aos="fade-up" data-aos-duration="3000"style={{backgroundImage:`url(${mainImg4.url})`}}></S.Memberimg>
           <S.MemberInfo>
             <h3>{label}</h3>
             <Link to="/Photos">

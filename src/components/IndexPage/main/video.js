@@ -1,7 +1,9 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import * as S from './style'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
 
 export function Video() {
     const data = useStaticQuery(graphql`
@@ -30,7 +32,7 @@ export function Video() {
         <S.VidContainer id="shows">
             <h2>{bottomTitle}</h2>
             <S.BoxCard>
-            <S.VidContent>
+            <S.VidContent data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                 <S.Video style={{backgroundImage:`url(${vid1.url})`}}>
                 <img src={playBtn.url} alt=""/>
                 </S.Video>
@@ -38,7 +40,7 @@ export function Video() {
                 <h3>{vidTxt1}</h3>
                 </S.Name>
             </S.VidContent>
-            <S.VidContent>
+            <S.VidContent data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                 <S.Video style={{backgroundImage:`url(${vid2.url})`}}>
                 <img src={playBtn.url} alt=""/>
                 </S.Video>
