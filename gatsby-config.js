@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/ziggy-stardust_gatsby_landing-page",
+  pathPrefix: `/ziggy-stardust_gatsby_landing-page`,
   siteMetadata: {
     siteUrl: "https://rdannog.github.io/",
     title: "ZIGGY STARDUST",
