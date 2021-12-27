@@ -9,7 +9,7 @@ export function BuyIndex() {
             <div className='info'>
               <div className='images'>
                 <img src="https://m.media-amazon.com/images/I/A1rxQMeiz9L._AC_SL1500_.jpg" alt=""/>
-                <img src="https://cover.box3.net/newsimg/dvdmov/max1319758172-back-cover.jpg" alt=""/>
+                <img className='album' src="https://cover.box3.net/newsimg/dvdmov/max1319758172-back-cover.jpg" alt=""/>
               </div>
               <div className='text'>
                 <h2>David Bowie - Ziggy Stardust</h2>

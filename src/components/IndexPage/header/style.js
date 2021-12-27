@@ -24,7 +24,12 @@ export const LogoContainer = styled.div`
         width:50%;
         cursor:pointer;
     }
-    
+    @media (max-width: 600px) {
+        width:70%;
+        img{
+            width:40%;
+        }
+    }
 `
 export const Navigation = styled.div`
     width:45%;
@@ -32,6 +37,18 @@ export const Navigation = styled.div`
     display:flex;
     align-items:center;
     justify-content:space-around;
+    @media (max-width: 600px) {
+        flex-flow: column nowrap;
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding-top: 3.5rem;
+        height: 100vh;
+        width: 300px;
+        background-color: #0D2538;
+        transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
+        transition: transform 0.3s ease-in-out;
+    }
 `
 export const NavItem = styled(Link)`
 font-size:1.3vw;
@@ -42,6 +59,9 @@ font-size:1.3vw;
 } 
 p{
     cursor:pointer;
+}
+@media (max-width: 600px) {
+    font-size:7vw;
 }
 `
 export const Navbtn = styled.button`
@@ -77,6 +97,11 @@ export const Navbtn = styled.button`
         height: 0;
         width: 100%;
         background: darkgoldenrod;
+    }
+    @media (max-width: 600px) {
+        width: 50vw;
+        height: 10vh;
+        font-size:5vw;
     }
 `
 export const HeaderIntro = styled.section`
@@ -157,6 +182,31 @@ export const TextIntro = styled.div`
             height: 0;
             width: 100%;
             background: darkgoldenrod;
+        }
+    }
+    @media (max-width: 600px) {
+        width:80%;
+        margin-top:0;
+        justify-content:start;
+        h1{
+            font-size:7vw;
+        }
+        h2{
+            font-size:3.3vw;
+            margin-bottom:40%;
+        }
+        p{
+            display:none;
+        }
+        button{
+            width:110%;
+            padding:2vh 1vw;
+            font-size:5vw;
+        }
+        @media (max-width: 400px) {
+            h2{
+                margin-bottom:70%;
+            }
         }
     }
 `

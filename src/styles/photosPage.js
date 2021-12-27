@@ -50,6 +50,9 @@ export const Title = styled.div`
     margin:7vh;
     display:flex;
     justify-content:center;
+    @media (max-width: 600px) {
+      font-size:7vw;
+    }
 `
 export const ImageContainer = styled.div`
 display: grid;
@@ -59,6 +62,9 @@ width:100%;
 overflow:hidden;
 div{
     margin:2vh 1vw;
+}
+@media (max-width: 600px) {
+    grid-template-columns: auto;
 }
 `
 export const Copyright = styled.section`

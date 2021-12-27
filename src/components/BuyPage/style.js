@@ -10,12 +10,21 @@ export const Description = styled.section`
         display:flex;
         justify-content:space-around;
         align-items:start;
+        @media (max-width: 600px) {
+            flex-direction:column;
+        }
     }
     .images{
         width: 45%;
         img{
             width:100%;
             margin-bottom:2vh;
+        }
+        @media (max-width: 600px) {
+            width:100%;
+            .album{
+                display:none;
+            }
         }
     }
     .text{
@@ -24,6 +33,9 @@ export const Description = styled.section`
         flex-direction:column;
         justify-content:center;
         align-items:start;
+        @media (max-width: 600px) {
+            width:100%;
+        }
     }
     h1{
         margin-bottom: 7vh;
@@ -49,6 +61,9 @@ export const Description = styled.section`
         text-align: justify;
         font-size: 1.1rem;
         font-family: 'Roboto', sans-serif;
+        @media (max-width: 600px) {
+            font-size: 1rem;
+        }
     }
     b{
         font-weight: bolder;

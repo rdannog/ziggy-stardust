@@ -9,6 +9,11 @@ export const BandContainer = styled.section`
     display: flex;
     align-items:center;
     justify-content:center;
+    @media (max-width: 600px) {
+        flex-direction:column;
+        height:300vh;
+        margin-top:10vh;
+    }
     
 `
 export const MemberContainer = styled.div`
@@ -20,6 +25,9 @@ export const MemberContainer = styled.div`
     align-items:center;
     justify-content:center;
     margin:1vh 2.5vw;
+    @media (max-width: 600px) {
+        width:90%;
+    }
 `
 export const Memberimg = styled.div`
     width:100%;
@@ -30,6 +38,11 @@ export const Memberimg = styled.div`
     &:hover{
         transform:scale(1.05);
         transition: all 0.7s ease-in-out;
+    }
+    @media (max-width: 600px) {
+        width:90%;
+        height:65%;
+        background-position:70% 20%;
     }
 `
 export const MemberInfo = styled.div`    
@@ -43,6 +56,9 @@ export const MemberInfo = styled.div`
         font-weight:400;
         margin:3vh 0;
         text-shadow:1px 1px 5px darkgoldenrod;
+        @media (max-width: 600px) {
+            font-size:6vw;
+        }
     }
     button{
         width: 12vw;
@@ -79,6 +95,11 @@ export const MemberInfo = styled.div`
             width: 100%;
             background: #5C703B;
         }
+        @media (max-width: 600px) {
+            width: 50vw;
+            height: 8vh;
+            font-size:4vw;
+        }
     } 
 `
 export const TracksContainer = styled.section`
@@ -88,7 +109,9 @@ export const TracksContainer = styled.section`
     justify-content:start;
     background-size:cover;
     background-position:20% 20%;
-    
+    @media (max-width: 600px) {
+        height:70vh;
+    }
 `
 export const Content = styled.div`
     width:100%;
@@ -133,7 +156,19 @@ export const Content = styled.div`
         margin-left:1vw;
         margin-bottom:0.3vh;
     }
-
+    @media (max-width: 600px) {
+        h2{
+            font-size:7vw;
+        }
+        p{
+            width:70%;
+            font-size:3vw;
+        }
+        li{
+            font-size:3.5vw;
+            margin-left:3vw;
+        }
+    }
 `
 export const VidContainer = styled.section`
     width:100%;
@@ -149,6 +184,12 @@ export const VidContainer = styled.section`
         text-shadow:1px 2px 5px rgba(184, 131, 79, 0.2);
         border-bottom:2px solid #333;
     }
+    @media (max-width: 600px) {
+        height:150vh;
+        h2{
+            font-size:9vw;
+        }
+    }
 `
 export const BoxCard = styled.div`
     width:90%;
@@ -157,6 +198,9 @@ export const BoxCard = styled.div`
     align-items:center;
     justify-content:space-around;
     margin-top:5vh;
+    @media (max-width: 600px) {
+        flex-direction:column;
+    }
 `
 export const VidContent = styled.div`
     width:40%;
@@ -168,6 +212,10 @@ export const VidContent = styled.div`
     background-color:rgba(184, 131, 79, 0.2);
     padding:2vh;
     border-radius:5px;
+    @media (max-width: 600px) {
+        width:90%;
+        margin-top:8vh;
+    }
 `
 export const Video = styled.div`
     width:100%;
@@ -199,5 +247,8 @@ export const Name = styled.div`
         font-size:2vw;
         font-weight:300;
         text-shadow:1px 1px 5px #222;
+        @media (max-width: 600px) {
+            font-size:4vw;
+        }
     }
 `

@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import * as S from './style'
 import { Link } from 'gatsby'
-
+import Navbar from '../mobilenav/navbar'
 export function Menu() {
     const data = useStaticQuery(graphql`
         query {
@@ -40,6 +40,7 @@ export function Menu() {
             <S.Navbtn>{release}</S.Navbtn>
           </Link>
         </S.Navigation>
+        <Navbar />
       </S.Menu>
     )
   }
